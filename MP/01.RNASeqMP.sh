@@ -19,8 +19,8 @@ fastq-dump --split-files --gzip SRR18867710
 mv SRR18867709_1.fastq.gz MP.rep1.fastq.gz
 mv SRR18867710_1.fastq.gz MP.rep2.fastq.gz
 # Quality trimming
-trimmomatic SE -threads 30 MP.rep1.fastq.gz rep1.filtered.fastq.gz LEADING:18 TRAILING:18 SLIDINGWINDOW:4:22 MINLEN:20
-trimmomatic SE -threads 30 MP.rep2.fastq.gz rep2.filtered.fastq.gz LEADING:18 TRAILING:18 SLIDINGWINDOW:4:22 MINLEN:20
+trimmomatic SE -threads 30 MP.rep1.fastq.gz rep1.filtered.fastq.gz LEADING:18 TRAILING:18 SLIDINGWINDOW:4:22 MINLEN:20 ILLUMINACLIP:TruSeq3-SE:2:30:10
+trimmomatic SE -threads 30 MP.rep2.fastq.gz rep2.filtered.fastq.gz LEADING:18 TRAILING:18 SLIDINGWINDOW:4:22 MINLEN:20 ILLUMINACLIP:TruSeq3-SE:2:30:10
 # Expression calculation per replicate
 rsem-calculate-expression -p 32 --fragment-length-mean 255 --star -p 32 --output-genome-bam --calc-ci \
 --ci-memory 30720 --star-gzipped-read-file rep1.filtered.fastq.gz /usr/local/genomes/hg38.rsem/hg38 MP.RNAseq1
