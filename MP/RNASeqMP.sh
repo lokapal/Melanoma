@@ -1,7 +1,7 @@
 #!/bin/sh
-# script to get and process H.sapiens Mel Z on Matrigel Plastic (MP) hg38 gene expression in TPM
+# script to get and process H.sapiens Mel Z grown on plastic (MP) hg38 gene expression in TPM
 # (C) Yuri Kravatsky, lokapal@gmail.com, jiri@eimb.ru
-# Input:  H.sapiens Mel Z cells grown on matrigel on plastic (MP) RNA-Seq data: GEO GSE221876: SRR18867709, SRR18867710
+# Input:  H.sapiens Mel Z cells grown on plastic (MP) RNA-Seq data: GEO GSE221876: SRR18867709, SRR18867710
 # Output: 1. MP.RNAseq1.genes.results    Mel Z MP hg38 gene expression replica 1
 #            MP.RNAseq2.genes.results    Mel Z MP hg38 gene expression replica 1
 #         2. MP.hg38.TPM                 joined replicas expression all and average values
