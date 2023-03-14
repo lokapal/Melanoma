@@ -5,8 +5,8 @@
 # Input:  list.txt with the following columns:
 #    1. DSB HEK293 top 4921 genes from DOI: 10.3390/ijms23137201
 #    2. 4C  HEK293 top 4921 genes from DOI: 10.3390/cells8111393
-#    3. Mel Z top 101 upregulated   genes by Log2FC > 1.5 
-#    4. Mel Z top 122 downregulated genes by Log2FC < -1.5
+#    3. Mel Z top 101 upregulated   MM-MMI genes by log2FC > 1.5 
+#    4. Mel Z top 122 downregulated MM-MMI genes by log2FC < -1.5
 #    5. hg38 EMBL v106 Gene IDs complete list
 #    6. hg38 EMBL v106 Gene Names complete list
 # Output: 1. summary.table.csv    Complete results, including lists of overlapping genes and p-values
