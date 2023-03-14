@@ -1,5 +1,5 @@
 #!/usr/bin/Rscript
-# script to calculate the number of interaction of many lists by SuperExactTest:
+# script to calculate the number of intersection of many lists by SuperExactTest:
 # Wang, M.; Zhao, Y.; Zhang, B. Efficient test and visualization of multi-set intersections. Sci Rep 2015, 5, 16923.
 # (C) Yuri Kravatsky, lokapal@gmail.com, jiri@eimb.ru
 # Input:  list.txt with the following columns:
